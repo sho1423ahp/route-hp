@@ -1,0 +1,361 @@
+body{
+  font-family: sans-serif;
+  /* min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position: relative; */
+}
+
+header,#footer,#Homefooter{
+  background: #f6cece;
+}
+
+/* header{
+    background: url(images/header_bg.png);
+} */
+
+/* main{
+  background-color: rgba(218,244,255,0.9)
+} */
+
+/* 親要素をテーブル化 */
+.mainWrapper{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* 子要素をセル化 */
+.mainWrapper > .containerOne{
+  display: table-cell;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+/* 最初と最後のセルはサイト外側の余白を削除 */
+.mainWrapper > .containerOne:first-child{
+  padding-left: 0;
+}
+.mainWrapper > .containerOne:last-child{
+  padding-right: 0;
+}
+
+/* 画面幅が小さいときは縦積み */
+@media(max-width: 800px){
+  .mainWrapper{
+    display: block;
+  }
+  .mainWrapper > .containerOne{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* 個別に調整 */
+.rightContainer{
+  width: 410px;
+}
+
+.rightLink{
+  width: 50%;
+}
+
+/* 視認用ダミーコンテンツ */
+.dummyContent{
+  width: 100%;
+  height: 100%;
+  /* background: #f6cece; */
+}
+
+/* キービジュアル写真 */
+.keyVisual img{
+  text-align: left;
+  width: 100%;
+}
+
+/* サークル役員 */
+.oficerList table,
+.oficerList th,
+.oficerList td{
+  border-collapse: collapse;
+  border: 1px solid rgb(216, 202, 202);
+  font-weight: normal;
+}
+
+.oficerList th,
+.oficerList td{
+  padding: 20px;
+}
+
+.oficerList table{
+  width: 100%;
+}
+
+.oficerList th{
+  background: #eee;
+}
+
+.hedearInner,.mainInner{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.mainInner h2{
+  border: double 10px #facece;
+}
+
+
+/* リンクページ設定 */
+.link ul,
+.link li
+.link a{
+  list-style-type: none;
+}
+
+.link h4{
+  width: 450px;
+}
+
+/* ヘッダー設定 */
+.hedearInner{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ナビゲーション設定 */
+.globalNav ul{
+  width: 600px;
+  overflow: hidden;
+}
+
+.globalNav li{
+  float: left;
+  width: 100px;
+  list-style-type: none;
+}
+
+.globalNav a{
+  display: block;
+  padding: 20px 0;
+  padding-bottom: 2px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  /* background-color: #ffffff; */
+  color: #f00;
+}
+
+.globalNav li a:after{
+  content: '';
+  width: 0;
+  transition: all ease;
+  border-bottom: 2px dotted #ff0000;
+  display: block;
+}
+
+.globalNav li a:hover:after{
+  width: 100%;
+  border-bottom: 2px dotted #ff0000;
+  /* background-color: #f6cece;
+  color: #ffffff; */
+}
+
+/* 900px以下は別構成 */
+
+/* サブメニュー設定 */
+.aboutNav ul{
+  width: 120%;
+}
+
+.aboutNav ul li{
+  display: inline-block;
+  width: 18%;
+}
+
+/* .aboutNav li{
+  float: none;
+  text-align: center;
+  width: 200px;
+  list-style: none;
+} */
+
+.aboutNav a{
+  display: block;
+  padding: 10px 0;
+  border-top: double 5px #f00;
+  border-bottom: double 5px #f00;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff6600;
+}
+
+.aboutNav a:hover{
+  border-top: double 5px #f00;
+  border-bottom: double 5px #f00;
+  background: #ffcccc;
+  color: #ffffff;
+}
+
+.aboutNav h1{
+  text-align: center;
+  color: #f00;
+  border: #ffffff;
+}
+
+#footer{
+  margin-top: 50px;
+}
+
+#Homefooter{
+  margin-top: 0px;
+}
+
+/* ワークスコンテンツ設定 */
+.float-image{
+  float: left;
+}
+
+.float-text{
+  float: right;
+}
+
+.worksContent h6{
+  width: 100%;
+  border: 2px #000;
+  /* background: #eeeeff; */
+}
+
+.worksContent h4{
+  padding: 0%;
+  border: none;
+}
+
+/* HOMEのみフッター設定 */
+.HomefooterInner{
+  text-align: center;
+  margin-top: 0px;
+  padding: 15px;
+}
+
+/* HOME以外のフッター設定 */
+.footerInner{
+  text-align: center;
+  margin-top: 0px;
+  padding: 15px;
+}
+
+/* フッター欄設定 */
+.footer_area ,.share_sns ,.banner{
+  display: inline-block;
+}
+
+.footer_area ,.share_sns li ,.banner li{
+  display: inline-block;
+  list-style: none;
+}
+
+.footer_area{
+  text-align: center;
+}
+
+.footer_area ul{
+  overflow: hidden;
+}
+
+.footer_area li{
+  float: left;
+  padding: 15px;
+  list-style-type: none;
+}
+
+.footer_area a{
+  display: block;
+  text-align: center;
+}
+
+.share_sns{
+  text-align: left;
+  /* padding-left: 30px; */
+}
+
+.banner{
+  text-align: right;
+  /* padding-right: 30px; */
+}
+
+/* 段落設定 */
+h1{
+  border-bottom: solid 3px #c0c0c0;
+}
+
+h2{
+  border-left: solid 5px #f00;
+  border-bottom: solid 2px #000;
+}
+
+h3{
+  font-size: large;
+}
+
+h4{
+  width: 580px;
+  border-bottom: dotted 2px #000;
+  font-size: large;
+}
+
+p{
+  color: #333;
+}
+
+li{
+  padding: 5px;
+}
+
+.imageInner{
+  padding: 20px 0px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+/* HOME以外のmainInner */
+.subInner{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* サークル データ・運営執行体制*/
+.circleList table{
+  width: 100%;
+}
+.circleList table,
+.circleList th,
+.circleList td{
+  border-collapse: collapse;
+  border: 1px solid rgb(216, 202, 202);
+  font-weight: normal;
+}
+
+.circleList th,
+.circleList td{
+  padding: 20px;
+}
+
+.circleList th{
+  background: #eee;
+}
+
+/* お問い合わせ設定 */
+.contactInner a{
+  margin:0 auto;
+  display:block;
+  width: 300px;
+  text-align: center;
+}
