@@ -4,6 +4,8 @@ body{
   height: auto !important;
   height: 100%;
   position: relative; */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 header,#footer,#Homefooter{
@@ -130,7 +132,8 @@ header,#footer,#Homefooter{
 
 /* ナビゲーション設定 */
 .globalNav ul{
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   overflow: hidden;
 }
 
@@ -218,23 +221,55 @@ header,#footer,#Homefooter{
 }
 
 /* ワークスコンテンツ設定 */
+.worksContent{
+  overflow: hidden;
+}
+
 .float-image{
   float: left;
+  width: 400px;
+  margin: 10px;
 }
 
 .float-text{
   float: right;
+  width: 550px;
+  margin: 10px;
 }
 
 .worksContent h6{
-  width: 100%;
-  border: 2px #000;
-  /* background: #eeeeff; */
+  background-color: #fee;
+  text-align: center;
+  color: #f00;
+  font-size: 8px;
+  line-height: 25px;
+  width: 20%;
+  padding: 0 2px;
+  margin: 4px;
 }
 
 .worksContent h4{
-  padding: 0%;
+  padding: 0;
+  margin: 0;
   border: none;
+  font-size: 18px;
+  color: #f00;
+}
+
+.worksContent p{
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+hr.boder{
+  border-top: 1px solid #f00;
+	border-bottom: 1px solid #f00;
+  background-color: red;
+}
+
+p.coming_soon{
+  text-align: center;
 }
 
 /* HOMEのみフッター設定 */
@@ -251,7 +286,7 @@ header,#footer,#Homefooter{
   padding: 15px;
 }
 
-/* フッター欄設定 */
+/* -----フッター欄設定----- */
 .footer_area ,.share_sns ,.banner{
   display: inline-block;
 }
