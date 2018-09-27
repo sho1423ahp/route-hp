@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="./footerFixed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider({
+                    auto: true,
+                    controls: false,
+                    mode: 'fade',
+                    pager: false
+                });
+            });
+    </script>
 </head>
 <body>
     <header>
@@ -32,7 +45,13 @@
             <div class="containerOne">
                 <div class="dummyContent">
                     <div class="keyVisual">
-                        <img src="images/ROUTE.png" alt="√Routeキービジュアル">
+                        <ul class="bxslider">
+                            <li><img src="images/homebanner/homebanner_01.png" alt="キービジュアル01"></li>
+                            <li><img src="images/homebanner/homebanner_02.png" alt="キービジュアル02"></li>
+                            <li><img src="images/homebanner/homebanner_03.png" alt="キービジュアル03"></li>
+                            <li><img src="images/homebanner/homebanner_04.png" alt="キービジュアル04"></li>
+                            <li><img src="images/homebanner/homebanner_05.png" alt="キービジュアル05"></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -56,8 +75,15 @@
         <div id="Homefooter">
             <div class="footer_area">
                 <ul>
-                    <li><a href="privacy/index.html">プライバシーポリシー</a></li>
-                    <li><a href="sitemap/index.html">サイトマップ</a></li>
+                    <li><a href="help/site/index.html">当サイトについて</a></li>
+                    <li>|</li>
+                    <li><a href="help/privacy/index.html">個人情報について</a></li>
+                    <li>|</li>
+                    <li><a href="help/sitemap/index.html">サイトマップ</a></li>
+                    <li>|</li>
+                    <li><a href="contact/index.html">お問い合わせ</a></li>
+                    <li>|</li>
+                    <li><a href="help/faq/index.html">FAQ</a></li>
                 </ul>
             </div>
             <!-- <div class="share_sns">
@@ -66,7 +92,7 @@
                     <li>facebook</li>
                 </ul>
             </div> -->
-            <div class="banner">
+            <!-- <div class="banner">
                 <ul>
                     <li>
                         <a href="https://www.youtube.com/channel/UC9PtR1TAAejXIA6eMmIg5XA">
@@ -74,7 +100,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <div class="HomefooterInner">
                 <small>Copylight &copy; 2018 √Route All Rights Reserved.
                     <br>このページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。</small>

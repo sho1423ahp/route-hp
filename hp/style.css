@@ -76,6 +76,8 @@ header,#footer,#Homefooter{
 .keyVisual img{
   text-align: left;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* サークル役員 */
@@ -113,7 +115,7 @@ header,#footer,#Homefooter{
 
 /* リンクページ設定 */
 .link ul,
-.link li
+.link li,
 .link a{
   list-style-type: none;
 }
@@ -179,6 +181,12 @@ header,#footer,#Homefooter{
 .aboutNav ul li{
   display: inline-block;
   width: 18%;
+  border-top: double 5px #f00;
+  border-bottom: double 5px #f00;
+}
+
+.aboutNav li+ li {
+  border-left: 1px solid #f00;
 }
 
 /* .aboutNav li{
@@ -190,9 +198,7 @@ header,#footer,#Homefooter{
 
 .aboutNav a{
   display: block;
-  padding: 10px 0;
-  border-top: double 5px #f00;
-  border-bottom: double 5px #f00;
+  padding: 8px 0;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
@@ -200,16 +206,52 @@ header,#footer,#Homefooter{
 }
 
 .aboutNav a:hover{
+  color: #ffffff;
+}
+
+.aboutNav li:hover{
   border-top: double 5px #f00;
   border-bottom: double 5px #f00;
   background: #ffcccc;
-  color: #ffffff;
 }
 
 .aboutNav h1{
   text-align: center;
+  margin: 0;
+  padding: 0;
   color: #f00;
   border: #ffffff;
+}
+
+.NavImg{
+  text-align: center;
+}
+
+.NavImg img{
+  height: 100px;
+}
+
+/* タイトル設定 */
+.title h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #f00;
+  border: none;
+}
+
+hr.border_1{
+  margin: 2px;
+  border: 0;
+  height: 3px;
+  background: #f00;
+}
+
+hr.border_2{
+  margin: 2px;
+  border: 0;
+  height: 1px;
+  background: #f00;
 }
 
 #footer{
@@ -263,12 +305,13 @@ header,#footer,#Homefooter{
 }
 
 hr.boder{
-  border-top: 1px solid #f00;
-	border-bottom: 1px solid #f00;
-  background-color: red;
+  margin: 2px;
+  border: 0;
+  height: 1px;
+  background: #f00;
 }
 
-p.coming_soon{
+.coming_soon{
   text-align: center;
 }
 
@@ -287,7 +330,7 @@ p.coming_soon{
 }
 
 /* -----フッター欄設定----- */
-.footer_area ,.share_sns ,.banner{
+.share_sns ,.banner{
   display: inline-block;
 }
 

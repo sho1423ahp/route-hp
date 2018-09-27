@@ -1,0 +1,54 @@
+/* Help関連ページのみのInner設定 */
+.subInner{
+    max-width: 800px;
+}
+
+.about_site{
+    max-width: 700px;
+    padding: 0 40px;
+}
+
+h2{
+    padding: 5px;
+    background: #888;
+    color: #fff;
+    font-size: 20px;
+    border: solid 1px;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+}
+h3{
+    border-bottom: solid 1px;
+}
+
+p{
+    font-size: 14px;
+    color: #333;
+}
+
+.link{
+    font-size: 14px;
+    padding: 0 auto;
+    list-style-type: decimal;
+}
+
+/* プライバシーポリシー */
+.PPlist{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+
+.PPlist ul{
+  overflow: hidden;
+}
+
+.PPlist li{
+  float: left;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.PPlist a{
+  display: block;
+  text-align: center;
+}
