@@ -1,0 +1,214 @@
+/* --------------------
+段落設定
+-------------------- */
+h2{
+    color: #333;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+
+/* --------------------
+ページ設定
+-------------------- */
+body{
+    background-color: bisque;
+}
+
+.mainSec_Inner{
+    margin: 20px auto;
+}
+
+.contents{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-top : -80px;
+    padding-top : 80px;
+}
+
+footer{
+    background-color: #f66464;
+
+}
+
+.footerInner{
+    margin-top: 0px;
+    padding: 15px;
+}
+
+/* --------------------
+トップ設定
+-------------------- */
+.KeyVisual{
+    margin: 110px auto;
+}
+
+/* --------------------
+ヘッダー設定
+-------------------- */
+.headerInner{
+    height: 80px; /* 高さ */
+    width: 100%; /* 長さ */
+    background-color: rgba(255,255,255,0.85);
+    position: fixed; /* ヘッダーを固定(これが重要) */
+    top: 0; /* 固定する位置 */
+    left: 0; /* 固定する位置 */
+    right: 0;  /* 固定する位置 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ナビゲーション設定 */
+.pc-else ul{
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.pc-else li{
+    float: left;
+    width: 150px;
+    list-style-type: none;
+}
+
+.pc-else a{
+    display: block;
+    padding: 20px 0;
+    padding-bottom: 2px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #512413;
+}
+
+.pc-else li a:after{
+    content: '';
+    width: 0;
+    transition: all ease;
+    border-bottom: 2px dotted #512413;
+    display: block;
+}
+
+.pc-else li a:hover:after{
+    width: 100%;
+    border-bottom: 2px dotted #512413;
+}
+
+
+
+/* --------------------
+ニュース設定
+-------------------- */
+.news{
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* --------------------
+オンエア設定
+-------------------- */
+.on_air{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* --------------------
+ストーリー設定
+-------------------- */
+.story{
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.story p{
+    line-height: 200%;
+}
+
+/* --------------------
+スタッフ・キャスト設定
+-------------------- */
+.staff_cast{
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.staff{
+    background-color: lightcoral;
+    border: solid 5px #f66464;
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cast{
+    background-color: lightcoral;
+    border: solid 5px #f66464;
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* --------------------
+キャラクター設定
+-------------------- */
+.character{
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+/* --------------------
+ムービー設定
+-------------------- */
+.movie{
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+/* --------------------
+フッダー設定
+-------------------- */
+.footerInner{
+    margin-top: 100px;
+    padding-top: 50px; 
+}
+.banner img{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.banner{
+    padding: 20px;
+    text-align: center;
+}
+
+.copylights{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.copylights small{
+    font-size: inherit;
+}
+
+small{
+    font-size: 80%;
+}
